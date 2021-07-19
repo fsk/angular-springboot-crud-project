@@ -1,0 +1,34 @@
+<div class="col-md-6 offset-md-3">
+
+
+    <p class="h3">{{ title }} </p>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="employee.name" name="firstName" placeholder="Adinizi giriniz.">
+        </div>
+        <div class="form-group">
+            <label>Surname</label>
+            <input type="text" class="form-control" id="surname" [(ngModel)]="employee.surname" name="surname" placeholder="Soyadinizi giriniz.">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="text" class="form-control" id="email" [(ngModel)]="employee.email" name="email" placeholder="Emailinizi giriniz.">
+        </div>
+        <div class="form-group">
+            <label>Department</label>
+            <input type="text" class="form-control" id="department" [(ngModel)]="employee.department" name="department" placeholder="Departmaninizi giriniz.">
+        </div>
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="employee.title" name="title" placeholder="Title giriniz.">
+        </div>
+        <div class="form-group">
+            <label>Identity Number</label>
+            <input type="text" class="form-control" id="identityNumber" [(ngModel)]="employee.identityNumber" name="identityNumber" placeholder="Tcnizi giriniz.">
+        </div>
+
+        <button class="btn btn-warning" type="submit">GUNCELLE</button>
+    </form>
+</div>
